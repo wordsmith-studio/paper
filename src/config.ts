@@ -1,4 +1,4 @@
-import type { Site, SocialObjects } from "./types";
+import type { Site } from "./types";
 
 import websiteDetails from "../website.json";
 
