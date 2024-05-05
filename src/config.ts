@@ -4,7 +4,6 @@ import websiteDetails from "./website.json";
 
 export const SITE: Site = {
   website: `https://${websiteDetails.url}/`,
-  author: websiteDetails.name,
   desc: websiteDetails.description,
   title: websiteDetails.name,
   ogImage: "astropaper-og.jpg",
