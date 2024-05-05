@@ -65,7 +65,7 @@ export default (post: CollectionEntry<"blog">) => {
           <div
             style={{
               display: "flex",
-              justifyContent: "end",
+              justifyContent: "flex-end",
               width: "100%",
               marginBottom: "8px",
               fontSize: 28,
