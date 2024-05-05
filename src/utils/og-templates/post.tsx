@@ -65,23 +65,12 @@ export default (post: CollectionEntry<"blog">) => {
           <div
             style={{
               display: "flex",
-              justifyContent: "space-between",
+              justifyContent: "end",
               width: "100%",
               marginBottom: "8px",
               fontSize: 28,
             }}
           >
-            <span>
-              by{" "}
-              <span
-                style={{
-                  color: "transparent",
-                }}
-              >
-                "
-              </span>
-            </span>
-
             <span style={{ overflow: "hidden", fontWeight: "bold" }}>
               {SITE.title}
             </span>
