@@ -1,9 +1,9 @@
 import type { Site } from "./types";
 
-import websiteDetails from "../website.json";
+import websiteDetails from "./website.json";
 
 export const SITE: Site = {
-  website: websiteDetails.url, // replace this with your deployed domain
+  website: websiteDetails.url,
   author: websiteDetails.name,
   desc: websiteDetails.description,
   title: websiteDetails.name,

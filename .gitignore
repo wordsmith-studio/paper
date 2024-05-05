@@ -34,5 +34,5 @@ pnpm-debug.log*
 !.yarn/versions
 .pnp.*
 
-website.json
+src/website.json
 .idea
