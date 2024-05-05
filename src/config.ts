@@ -3,7 +3,7 @@ import type { Site } from "./types";
 import websiteDetails from "./website.json";
 
 export const SITE: Site = {
-  website: websiteDetails.url,
+  website: `https://${websiteDetails.url}/`,
   author: websiteDetails.name,
   desc: websiteDetails.description,
   title: websiteDetails.name,
