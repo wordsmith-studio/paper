@@ -4,10 +4,12 @@ import websiteDetails from "./website.json";
 
 export const SITE: Site = {
   website: `https://${websiteDetails.url}/`,
+  domain: websiteDetails.url,
+  analyticsEnabled: websiteDetails.analyticsEnabled,
   desc: websiteDetails.description,
   title: websiteDetails.name,
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
