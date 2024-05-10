@@ -5,6 +5,7 @@ import websiteDetails from "./website.json";
 export const SITE: Site = {
   website: `https://${websiteDetails.url}/`,
   domain: websiteDetails.url,
+  font: websiteDetails.font || "Montserrat",
   analyticsEnabled: websiteDetails.analyticsEnabled,
   desc: websiteDetails.description,
   title: websiteDetails.name,

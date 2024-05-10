@@ -3,6 +3,7 @@ export type Site = {
   domain: string;
   desc: string;
   title: string;
+  font: string;
   ogImage?: string;
   analyticsEnabled: boolean;
   lightAndDarkMode: boolean;
