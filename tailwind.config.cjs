@@ -7,6 +7,8 @@ function withOpacity(variableName) {
   };
 }
 
+const websiteJson = require("./src/website.json");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -54,7 +56,7 @@ module.exports = {
         transparent: "transparent",
       },
       fontFamily: {
-        mono: ["IBM Plex Mono", "monospace"],
+        mono: [websiteJson.font || "Montserrat", "monospace"],
       },
 
       typography: {
