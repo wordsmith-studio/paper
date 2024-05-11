@@ -9,6 +9,7 @@ export const SITE: Site = {
   analyticsEnabled: websiteDetails.analyticsEnabled,
   desc: websiteDetails.description,
   title: websiteDetails.name,
+  cf: websiteDetails.cf,
   lightAndDarkMode: true,
   postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
