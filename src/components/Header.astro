@@ -9,12 +9,7 @@ export interface Props {
 }
 
 const { activeNav } = Astro.props;
-const pages = await getCollection("pages");
-console.log({ pages });
-console.log({ pages });
-console.log({ pages });
-console.log({ pages });
-console.log({ pages });
+const pages = (await getCollection("pages")) || [];
 ---
 
 <header>
