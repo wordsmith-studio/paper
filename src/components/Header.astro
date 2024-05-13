@@ -1,13 +1,20 @@
 ---
 import { LOGO_IMAGE, SITE } from "@config";
+import { getCollection } from "astro:content";
 import Hr from "./Hr.astro";
 import LinkButton from "./LinkButton.astro";
 
 export interface Props {
-  activeNav?: "posts" | "tags" | "about" | "search";
+  activeNav?: "posts" | "tags" | "search";
 }
 
 const { activeNav } = Astro.props;
+const pages = await getCollection("pages");
+console.log({ pages });
+console.log({ pages });
+console.log({ pages });
+console.log({ pages });
+console.log({ pages });
 ---
 
 <header>
@@ -55,6 +62,18 @@ const { activeNav } = Astro.props;
           </svg>
         </button>
         <ul id="menu-items" class="display-none sm:flex">
+          {
+            pages.map(page => (
+              <li>
+                <a
+                  href={"/" + page.slug}
+                  class={activeNav === page.slug ? "active" : ""}
+                >
+                  {page.data.title}
+                </a>
+              </li>
+            ))
+          }
           <li>
             <a href="/posts/" class={activeNav === "posts" ? "active" : ""}>
               Posts
