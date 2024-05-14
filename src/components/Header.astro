@@ -75,11 +75,6 @@ const pages = (await getCollection("pages")) || [];
             </a>
           </li>
           <li>
-            <a href="/tags/" class={activeNav === "tags" ? "active" : ""}>
-              Tags
-            </a>
-          </li>
-          <li>
             <LinkButton
               href="/search/"
               className={`focus-outline p-3 sm:p-1 ${
