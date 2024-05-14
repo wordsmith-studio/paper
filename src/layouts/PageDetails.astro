@@ -34,7 +34,7 @@ const layoutProps = {
 <Layout {...layoutProps}>
   <Header activeNav={slug} />
 
-  <main id="main-content">
+  <main id="main-content" class="mt-8">
     <h1 transition:name={slugifyStr(title)} class="post-title">{title}</h1>
     <Datetime
       pubDatetime={pubDatetime}
