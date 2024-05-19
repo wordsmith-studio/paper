@@ -15,13 +15,9 @@ const { noMarginTop = false } = Astro.props;
   <div class="footer-wrapper">
     <div
       class="copyright-wrapper"
-      dangerouslySetInnerHTML={{
-        __html:
-          SITE.footer ||
-          `Powered by <a href="https://wordsmith.studio">Wordsmith Studio</a>`,
-      }}
-    >
-    </div>
+      set:html={SITE.footer ||
+        `Powered by <a href="https://wordsmith.studio">Wordsmith Studio</a>`}
+    />
   </div>
 </footer>
 
