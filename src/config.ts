@@ -10,6 +10,7 @@ export const SITE: Site = {
   desc: websiteDetails.description,
   title: websiteDetails.name,
   cf: websiteDetails.cf,
+  footer: websiteDetails.footer,
   lightAndDarkMode: true,
   postPerPage: 5,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes

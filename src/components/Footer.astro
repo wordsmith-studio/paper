@@ -1,8 +1,7 @@
 ---
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
-
-const currentYear = new Date().getFullYear();
+import { SITE } from "@config";
 
 export interface Props {
   noMarginTop?: boolean;
@@ -14,10 +13,14 @@ const { noMarginTop = false } = Astro.props;
 <footer class={`${noMarginTop ? "" : "mt-auto"}`}>
   <Hr noPadding />
   <div class="footer-wrapper">
-    <div class="copyright-wrapper">
-      <span>Copyright &#169; {currentYear}</span>
-      <span class="separator">&nbsp;|&nbsp;</span>
-      <span>All rights reserved.</span>
+    <div
+      class="copyright-wrapper"
+      dangerouslySetInnerHTML={{
+        __html:
+          SITE.footer ||
+          `Powered by <a href="https://wordsmith.studio">Wordsmith Studio</a>`,
+      }}
+    >
     </div>
   </div>
 </footer>

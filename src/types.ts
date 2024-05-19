@@ -9,5 +9,6 @@ export type Site = {
   lightAndDarkMode: boolean;
   postPerPage: number;
   scheduledPostMargin: number;
+  footer?: string;
   cf: any;
 };
